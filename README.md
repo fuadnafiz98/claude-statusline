@@ -4,13 +4,16 @@ A status line for [Claude Code](https://claude.com/claude-code): directory, bran
 model, context window, and rate limits. One file, no dependencies beyond `jq`, and it
 renders in about 12 ms.
 
-```
-my-project   dev  Opus 5 high  󰆼 36%  󰪠 28% 2h34m
-```
+![The status line: directory, branch, model, context window, five-hour limit](docs/statusline.png)
 
 ## Previews
 
-Colour and glyph escalate together, so a glance is enough.
+Colour and glyph escalate together, so a glance is enough. Past 50% the context
+figure turns red and the jar fills:
+
+![Context window at 50%, shown in red with a filled jar](docs/statusline-context-critical.png)
+
+Every state, as text:
 
 ```
 calm                my-project   dev  Opus 5 high  󱘲 12%  󰪟 22% 2h34m
